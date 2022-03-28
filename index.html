@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <!-- Feel free to remove these styles or customize in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+
+  <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+
+  <div id="main">
+    <div class="profile">
+      <div class="name">
+        <img src="images/my_img.jpeg" alt="">
+        <div>
+          <p>Report for</p>
+          <h1>Shashwat Gupta</h1>
+        </div>
+      </div>
+      <div class="timeframe">
+        <a href="" id="daily">Daily</a>
+        <a href="" id="weekly">Weekly</a>
+        <a href="" id="monthly">Monthly</a>
+      </div>
+    </div>
+    <div class="data">
+      <div class="work">
+        <div class="svg">
+          <img src="images/icon-work.svg" alt="">
+        </div>
+        <div class="content">
+          <div>
+            <p>Work</p>
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                fill="#BBC0FF" fill-rule="evenodd" />
+            </svg>
+          </div>
+          <div class="time">
+            <p>
+              --
+            </p>
+            <p>
+              --
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="play">
+        <div class="svg">
+          <img src="images/icon-play.svg" alt="">
+        </div>
+        <div class="content">
+          <div>
+            <p>Play</p>
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                fill="#BBC0FF" fill-rule="evenodd" />
+            </svg>
+          </div>
+          <div class="time">
+            <p>
+              --
+            </p>
+            <p>
+              --
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="study">
+        <div class="svg">
+          <img src="images/icon-study.svg" alt="">
+        </div>
+        <div class="content">
+          <div>
+            <p>Study</p>
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                fill="#BBC0FF" fill-rule="evenodd" />
+            </svg>
+          </div>
+          <div class="time">
+            <p>
+              --
+            </p>
+            <p>
+              --
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="exercise">
+        <div class="svg">
+          <img src="images/icon-exercise.svg" alt="">
+        </div>
+        <div class="content">
+          <div>
+            <p>Exercise</p>
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                fill="#BBC0FF" fill-rule="evenodd" />
+            </svg>
+          </div>
+          <div class="time">
+            <p>
+              --
+            </p>
+            <p>
+              --
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="social">
+        <div class="svg">
+          <img src="images/icon-social.svg" alt="">
+        </div>
+        <div class="content">
+          <div>
+            <p>Social</p>
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                fill="#BBC0FF" fill-rule="evenodd" />
+            </svg>
+          </div>
+          <div class="time">
+            <p>
+              --
+            </p>
+            <p>
+              --
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="self-care">
+        <div class="svg">
+          <img src="images/icon-self-care.svg" alt="">
+        </div>
+        <div class="content">
+          <div>
+            <p>Self Care</p>
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                fill="#BBC0FF" fill-rule="evenodd" />
+            </svg>
+          </div>
+          <div class="time">
+            <p>
+              --
+            </p>
+            <p>
+              --
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Shashwat Gupta</a>.
+  </div> -->
+  <script src="/js/app.js"></script>
+</body>
+
+</html>
